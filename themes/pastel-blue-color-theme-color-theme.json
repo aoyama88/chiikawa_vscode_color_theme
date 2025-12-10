@@ -1,0 +1,517 @@
+{
+  // テーマ名
+  
+  "name": "pastel-blue-color-theme",
+  // ワークベンチの色設定（エディタの背景色など、コードのシンタックスハイライト以外の部分）
+  "colors": {
+      "editor.background": "#d3f4f8", // エディタの背景色
+      "editor.foreground": "#a54708", // エディタのデフォルトの文字色（フォアグラウンド）
+      "editorLineNumber.foreground": "#046dae",         // 行番号の色
+      "editorLineNumber.activeForeground": "#a54708",   // 現在アクティブな行の行番号の色
+      "editorCursor.foreground": "#a54708",             // カーソルの色
+      "editorIndentGuide.background1": "#046dae",       // インデントの垂直なガイド線の色
+      "editorIndentGuide.activeBackground1": "#046dae", // アクティブなインデントレベルのガイド線の色
+      "editor.lineHighlightBorder": "#1BA3D2",     // 現在行を囲む**枠線（ボーダー）**の色。
+      "editor.selectionBackground": "#a9d7f2", // 選択されたテキストの背景色。
+      // "editor.wordHighlightBackground": "#fff", // 現在カーソル下にある単語と、同じ単語の出現箇所の背景色。
+      "editor.findMatchBackground": "#fff", // 検索で現在選択されている一致箇所の背景色。
+      // "editor.findMatchHighlightBackground": "#fff", // 検索で他のすべての一致箇所の背景色。
+      "editor.linkedEditingBackground": "#fff", // リンクされた編集モード（同期して編集される箇所）の背景色。
+      "editor.lineHighlightBackground": "#bddcf0", // カーソルがある現在行の背景色。
+      // "editor.rangeHighlightBackground": "#fff", // 拡張機能などによってハイライトされた特定の範囲の背景色。
+      "editorOverviewRuler.background": "#fff", // スクロールバーの右側にあるミニマップの背景。
+      "editorOverviewRuler.border": "#fff", // ミニマップとエディタの間の境界線の色。
+      "editorWidget.background": "#fff", // 検索ボックスや設定ウィジェットなどのポップアップの背景色。
+      "editorSuggestWidget.background": "#891111", // 補完候補（サジェスト）ウィジェットの背景色。
+      "editorLightBulb.foreground": "#ECE548", // 電球アイコン（クイックフィックス）の色。
+      "editorGutter.background": "#c2eff5", // 行番号が表示される**ガター（溝）**の背景色。
+      // "diffEditor.insertedTextBackground": "#fff", // 追加された行の背景色。
+      // "diffEditor.removedTextBackground": "#fff", // 削除された行の背景色。
+      "diffEditor.border": "#fff", // Diffエディタの境界線の色
+      "list.activeSelectionIconForeground": "#fff", // リスト/ツリービューでアクティブに選択されているアイテムのアイコンの文字色
+      "list.activeSelectionBackground": "#5ab842", // 現在選択されている項目（例: ファイル名）の背景色。
+      "list.activeSelectionForeground": "#a54708", // 現在選択されている項目の文字の色。
+      "list.hoverBackground": "#5ab842", // マウスカーソルが乗っている項目の背景色。
+      "list.focusBackground": "#75c361", // キーボードでフォーカスされている項目（選択はされていない）の背景色。
+      "list.highlightForeground": "#000000", // 検索などでハイライトされた文字の色
+      "sideBar.background": "#9CCD71",              // サイドバーの背景色
+      "sideBar.foreground": "#4D2812", // サイドバーのデフォルトの文字色（アイコンやウィジェットの文字）。
+      "sideBar.border": "#a54708", // サイドバーとエディタの間の垂直な境界線の色
+      "sideBarTitle.foreground": "#000000", // サイドバーヘッダーのタイトル文字の色。
+      "sideBarTitle.background": "#9EC36C", // サイドバーヘッダーの背景色（通常は sideBar.backgroundと同じか、定義されていない）。
+      "sideBarSectionHeader.background": "#B7C7D8", // 各セクションヘッダー（例: OUTLINE、TIMELINE）の背景色。
+      "sideBarSectionHeader.foreground": "#000000", // 各セクションヘッダーの文字の色。
+      "sideBarSectionHeader.border": "#74bd14", // 各セクションヘッダーの境界線の色
+      "badge.background": "#000000", // バッジ（通知）の背景色。
+      "badge.foreground": "#000000", // バッジ（通知）の文字色
+      "tab.activeBackground": "#9CCD71",            // アクティブなタブの背景色
+      "tab.inactiveBackground": "#C7E6AC",          // 非アクティブなタブの背景色
+      "tab.unfocusedActiveBackground": "#bbd925",   // VS Codeウィンドウ全体が非アクティブな状態での、アクティブなタブの背景色
+      "tab.unfocusedInactiveBackground": "#bbd925", // VS Codeウィンドウ全体が非アクティブな状態での、非アクティブなタブの背景色
+      "statusBar.background": "#F494A4", // ステータスバーの背景色
+      "statusBarItem.remoteBackground": "#F494A4",  // リモート状態を示す項目（「リモートウィンドウを開きます」のボタン）の背景色。VS Codeのコア機能で用意されている専用の設定キーです。
+      "statusBarItem.remoteForeground": "#000",  // リモート状態を示す項目の文字色やアイコンの色
+      "statusBarItem.hoverBackground": "#000",   // ステータスバーの項目にホバーした時の背景色。
+      "statusBarItem.activeBackground": "#000",  // ステータスバーの項目をクリックした時の背景色。
+      "statusBarItem.errorBackground": "#000",   // エラーを示す項目（例：コードの問題数）の背景色。
+      "statusBarItem.warningBackground": "#000", // 警告を示す項目（例：Gitの競合）の背景色
+      "titleBar.activeBackground": "#f4bac3",   // 現在アクティブなウィンドウのタイトルバー（一番上のバー）の背景色
+      "titleBar.inactiveBackground": "#f4bac3", // 現在非アクティブなウィンドウのタイトルバーの背景色
+      "titleBar.activeForeground": "#fff",      // アクティブなタイトルバー上の文字やアイコンの色（通常はウィンドウタイトル）
+      "titleBar.inactiveForeground": "#ffffffb3"  // 非アクティブなタイトルバー上の文字やアイコンの色
+  },
+  // シンタックスハイライトのためのトークン色の設定 (コード内の要素の色)
+  "tokenColors": [
+      {
+          // コメント
+          "name": "Comments",
+          "scope": [
+              "comment", // 標準的なコメント
+              "punctuation.definition.comment" // コメントの区切り文字
+          ],
+          "settings": {
+              "fontStyle": "italic", // フォントスタイルをイタリック（斜体）に
+              "foreground": "#797979" // 文字色
+          }
+      },
+      {
+          // コメント: プリプロセッサ（例: C/C++の `#if` など）
+          "name": "Comments: Preprocessor",
+          "scope": "comment.block.preprocessor",
+          "settings": {
+              "fontStyle": "", // フォントスタイルなし
+              "foreground": "#AAAAAA" // 文字色
+          }
+      },
+      {
+          // コメント: ドキュメンテーション（例: JSDoc, PHPDoc, Rustの `///` など）
+          "name": "Comments: Documentation",
+          "scope": [
+              "comment.documentation",
+              "comment.block.documentation"
+          ],
+          "settings": {
+              "foreground": "#448C27" // 文字色
+          }
+      },
+      {
+          // 無効な（不正な）構文、エラー
+          "name": "Invalid - Illegal",
+          "scope": "invalid.illegal",
+          "settings": {
+              "foreground": "#660000" // 文字色
+          }
+      },
+      {
+          // 演算子（例: `+`, `-`, `=`, `==` など）
+          "name": "Operators",
+          "scope": "keyword.operator",
+          "settings": {
+              "foreground": "#777777" // 文字色
+          }
+      },
+      {
+          // キーワード（例: `if`, `for`, `function`, `class` など）
+          "name": "Keywords",
+          "scope": [
+              "keyword",
+              "storage"
+          ],
+          "settings": {
+              "foreground": "#4498c5" // 文字色
+          }
+      },
+      {
+          // 型（Types）（例: `int`, `string`, `type` などの宣言）
+          "name": "Types",
+          "scope": [
+              "storage.type",
+              "support.type"
+          ],
+          "settings": {
+              "foreground": "#9167a9" // 文字色
+          }
+      },
+      {
+        // 言語定数（例: true, false, null, this など）
+        "name": "Language Constants",
+        "scope": [
+          "constant.language",
+          "support.constant",
+          "variable.language"
+        ],
+        "settings": {
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // 変数名
+        "name": "Variables",
+        "scope": [
+          "variable",
+          "support.variable"
+        ],
+        "settings": {
+          "foreground": "#b486cf" // 文字色
+        }
+      },
+      {
+        // 関数名
+        "name": "Functions",
+        "scope": [
+          "entity.name.function",
+          "support.function"
+        ],
+        "settings": {
+          "fontStyle": "bold", // フォントスタイルを太字に
+          "foreground": "#AA3731" // 文字色
+        }
+      },
+      {
+        // クラス名、型定義名、継承クラス名
+        "name": "Classes",
+        "scope": [
+          "entity.name.type",
+          "entity.other.inherited-class",
+          "support.class"
+        ],
+        "settings": {
+          "fontStyle": "bold", // フォントスタイルを太字に
+          "foreground": "#b486cf" // 文字色
+        }
+      },
+      {
+        // 例外（Exceptions）の名前
+        "name": "Exceptions",
+        "scope": "entity.name.exception",
+        "settings": {
+          "foreground": "#660000" // 文字色
+        }
+      },
+      {
+        // セクション名（例: Markdownの見出し、INIファイルなどのセクション）
+        "name": "Sections",
+        "scope": "entity.name.section",
+        "settings": {
+          "fontStyle": "bold" // フォントスタイルを太字に
+        }
+      },
+      {
+        // 数値、文字（リテラル）
+        "name": "Numbers, Characters",
+        "scope": [
+          "constant.numeric",
+          "constant.character",
+          "constant"
+        ],
+        "settings": {
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // 文字列（Strings）
+        "name": "Strings",
+        "scope": "string",
+        "settings": {
+          "foreground": "#448C27" // 文字色
+        }
+      },
+      {
+        // 文字列: エスケープシーケンス（例: \n, \t など）
+        "name": "Strings: Escape Sequences",
+        "scope": "constant.character.escape",
+        "settings": {
+          "foreground": "#777777" // 文字色
+        }
+      },
+      {
+        // 文字列: 正規表現
+        "name": "Strings: Regular Expressions",
+        "scope": "string.regexp",
+        "settings": {
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // 文字列: シンボル（例: Rubyなど）
+        "name": "Strings: Symbols",
+        "scope": "constant.other.symbol",
+        "settings": {
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // 区切り文字、句読点（例: ,, ;, {}, () など）
+        "name": "Punctuation",
+        "scope": "punctuation",
+        "settings": {
+          "foreground": "#777777" // 文字色
+        }
+      },
+      {
+        // HTML: Doctype宣言
+        "name": "HTML: Doctype Declaration",
+        "scope": [
+          "meta.tag.sgml.doctype",
+          "meta.tag.sgml.doctype string",
+          "meta.tag.sgml.doctype entity.name.tag",
+          "meta.tag.sgml punctuation.definition.tag.html"
+        ],
+        "settings": {
+          "foreground": "#AAAAAA" // 文字色
+        }
+      },
+      {
+        // HTML: タグ（<, >, タグ全体）
+        "name": "HTML: Tags",
+        "scope": [
+          "meta.tag",
+          "punctuation.definition.tag.html",
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html"
+        ],
+        "settings": {
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // HTML: タグ名（例: div, p, img など）
+        "name": "HTML: Tag Names",
+        "scope": "entity.name.tag",
+        "settings": {
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // HTML: 属性名（例: class, id, src など）
+        "name": "HTML: Attribute Names",
+        "scope": [
+          "meta.tag entity.other.attribute-name",
+          "entity.other.attribute-name.html"
+        ],
+        "settings": {
+          "fontStyle": "italic", // フォントスタイルをイタリックに
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // HTML: 実体参照（Entities）（例: &nbsp;, &lt; など）
+        "name": "HTML: Entities",
+        "scope": [
+          "constant.character.entity",
+          "punctuation.definition.entity"
+        ],
+        "settings": {
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // CSS: セレクター（例: .class, #id, tag など）
+        "name": "CSS: Selectors",
+        "scope": [
+          "meta.selector",
+          "meta.selector entity",
+          "meta.selector entity punctuation",
+          "entity.name.tag.css"
+        ],
+        "settings": {
+          "foreground": "#b486cf" // 文字色
+        }
+      },
+      {
+        // CSS: プロパティ名（例: color, font-size など）
+        "name": "CSS: Property Names",
+        "scope": [
+          "meta.property-name",
+          "support.type.property-name"
+        ],
+        "settings": {
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // CSS: プロパティ値（例: red, 16px, bold など）
+        "name": "CSS: Property Values",
+        "scope": [
+          "meta.property-value",
+          "meta.property-value constant.other",
+          "support.constant.property-value"
+        ],
+        "settings": {
+          "foreground": "#448C27" // 文字色
+        }
+      },
+      {
+        // CSS: !important キーワード
+        "name": "CSS: Important Keyword",
+        "scope": "keyword.other.important",
+        "settings": {
+          "fontStyle": "bold" // フォントスタイルを太字に
+        }
+      },
+      {
+        // マークアップ（例: Diff、Markdownなど）: 変更された行
+        "name": "Markup: Changed",
+        "scope": "markup.changed",
+        "settings": {
+          "foreground": "#000000" // 文字色
+        }
+      },
+      {
+        // マークアップ: 削除された行
+        "name": "Markup: Deletion",
+        "scope": "markup.deleted",
+        "settings": {
+          "foreground": "#000000" // 文字色
+        }
+      },
+      {
+        // マークアップ: 強調（イタリック、斜体）
+        "name": "Markup: Emphasis",
+        "scope": "markup.italic",
+        "settings": {
+          "fontStyle": "italic" // フォントスタイルをイタリックに
+        }
+      },
+      {
+        // マークアップ: エラー
+        "name": "Markup: Error",
+        "scope": "markup.error",
+        "settings": {
+          "foreground": "#660000" // 文字色
+        }
+      },
+      {
+        // マークアップ: 挿入された行
+        "name": "Markup: Insertion",
+        "scope": "markup.inserted",
+        "settings": {
+          "foreground": "#000000" // 文字色
+        }
+      },
+      {
+        // マークアップ: リンク
+        "name": "Markup: Link",
+        "scope": "meta.link",
+        "settings": {
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // マークアップ: 出力、生のテキスト（例: コンソール出力、Markdownのコードブロック）
+        "name": "Markup: Output",
+        "scope": [
+          "markup.output",
+          "markup.raw"
+        ],
+        "settings": {
+          "foreground": "#777777" // 文字色
+        }
+      },
+      {
+        // マークアップ: プロンプト（例: コマンドラインのプロンプト）
+        "name": "Markup: Prompt",
+        "scope": "markup.prompt",
+        "settings": {
+          "foreground": "#777777" // 文字色
+        }
+      },
+      {
+        // マークアップ: 見出し（Heading）
+        "name": "Markup: Heading",
+        "scope": "markup.heading",
+        "settings": {
+          "foreground": "#AA3731" // 文字色
+        }
+      },
+      {
+        // マークアップ: 強調（ボールド、太字）
+        "name": "Markup: Strong",
+        "scope": "markup.bold",
+        "settings": {
+          "fontStyle": "bold" // フォントスタイルを太字に
+        }
+      },
+      {
+        // マークアップ: トレースバック（エラーのスタックトレースなど）
+        "name": "Markup: Traceback",
+        "scope": "markup.traceback",
+        "settings": {
+          "foreground": "#660000" // 文字色
+        }
+      },
+      {
+        // マークアップ: 下線
+        "name": "Markup: Underline",
+        "scope": "markup.underline",
+        "settings": {
+          "fontStyle": "underline" // フォントスタイルを下線に
+        }
+      },
+      {
+        // マークアップ: 引用（Quote）
+        "name": "Markup Quote",
+        "scope": "markup.quote",
+        "settings": {
+          "foreground": "#b486cf" // 文字色
+        }
+      },
+      {
+        // マークアップ: リスト
+        "name": "Markup Lists",
+        "scope": "markup.list",
+        "settings": {
+          "foreground": "#78A6BF" // 文字色
+        }
+      },
+      {
+        // マークアップ: スタイリング（太字やイタリックのマーカー文字など）
+        "name": "Markup Styling",
+        "scope": [
+          "markup.bold",
+          "markup.italic"
+        ],
+        "settings": {
+          "foreground": "#448C27" // 文字色
+        }
+      },
+      {
+        // マークアップ: インラインの生テキスト（コードスパンなど）
+        "name": "Markup Inline",
+        "scope": "markup.inline.raw",
+        "settings": {
+          "fontStyle": "", // フォントスタイルなし
+          "foreground": "#AB6526" // 文字色
+        }
+      },
+      {
+        // 拡張: Diffの範囲情報（Gitなどで差分を表示する際の範囲を示す行）
+        "name": "Extra: Diff Range",
+        "scope": [
+          "meta.diff.range",
+          "meta.diff.index",
+          "meta.separator"
+        ],
+        "settings": {
+          "foreground": "#434343" // 文字色
+        }
+      },
+      {
+        // 拡張: Diffの元ファイル情報（変更前のファイル名）
+        "name": "Extra: Diff From",
+        "scope": "meta.diff.header.from-file",
+        "settings": {
+          "foreground": "#434343" // 文字色
+        }
+      },
+      {
+        // 拡張: Diffの変更後ファイル情報（変更後のファイル名）
+        "name": "Extra: Diff To",
+        "scope": "meta.diff.header.to-file",
+        "settings": {
+          "foreground": "#434343" // 文字色
+        }
+      }
+    ]
+  }
+  

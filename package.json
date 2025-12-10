@@ -1,0 +1,22 @@
+{
+  "name": "pastel-blue-color-theme",
+  "displayName": "pastel-blue-color",
+  "description": "pastel blue color based theme",
+  "publisher": "Naoya M",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "pastel-blue-color-theme",
+        "uiTheme": "vs",
+        "path": "./themes/pastel-blue-color-theme-color-theme.json"
+      }
+    ]
+  }
+}
